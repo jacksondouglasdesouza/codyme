@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./sources/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/dracula.min.css">
+
+    <!-- FAVICONS -->
+    <link rel="icon" href="./sources/images/favicon/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="./sources/images/favicon/favicon-16x16.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="./sources/images/favicon/favicon-32x32.png" type="image/png" sizes="32x32">
+    <link rel="icon" href="./sources/images/favicon/favicon.ico" type="image/x-icon">
+
+    <!-- APPLE TOUCH ICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./sources/images/favicon/apple-touch-icon.png" type="image/png">
+
+    <!--ANDROID / PWA ICONS -->
+    <link rel="icon" href="./sources/images/favicon/android-chrome-192x192.png" type="image/png" sizes="192x192">
+    <link rel="icon" href="./sources/images/favicon/android-chrome-512x512.png" type="image/png" sizes="512x512">
+
+    <!-- MANIFEST -->
+    <link rel="manifest" href="./sources/images/favicon/site.webmanifest">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- SEO -->
+    <meta name="description" content="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.">
+    <meta name="keywords" content="lorem, ipsum, dolor, sit, amet">
+    <meta name="author" content="Jackson Douglas de Souza">
+
+    <!-- OPEN GRAPH -->
+    <meta property="op:title" content="Cody.Me - C Programming Exercises">
+    <meta property="op:description" content="lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem">
+    <meta property="op:image" content="./sources/images/logo/logoCody.svg">
+    <meta property="op:url" content="https://cody.me">
+    <meta property="op:type" content="website">
+
+
+    <title>Cody.Me | Home</title>
+</head>
+<body>
+    <!--  HEADER   -->
+    <header>
+        <div class="mascotCody"><img src="./sources/images/logo/mascotCody.svg" alt="Mascot Cody"></div>
+        <div class="logo"><img src="./sources/images/logo/logoCody.svg" alt="Logo Cody"></div>
+    </header>
+
+    <!--  MAIN   -->
+    <main>
+        <section class="cody-box">
+            <div class="box-header">
+                <h1>Try It Live!</h1>
+                <p>Change the code below and watch the magic happen.</p>
+            </div>
+            <!-- -->
+            <div class="code-editor">
+                <textarea id="c-code">
+                    #include <stdio.h>
+
+                        int main(void){
+                            printf("Hello, World! Welcome to Cody.Me!");
+                            return 0;
+                        }
+                </textarea>
+            </div>
+
+            <!-- -->
+            <div class="box-controls">
+                <button id="run-button">Run</button>
+            </div>
+
+            <!-- -->
+            <div class="output-console">
+                <pre id="output">The result of your code will appear here...</pre>
+            </div>
+        </section>
+        
+    </main>
+
+    <!--  FOOTER   -->
+    <footer>
+        <p>Made with ❤️ by <a href="https://github.com/JacksonDouglas" target="_blank" rel="noopener noreferrer">Jackson Douglas</a> | <a href="https://cody.me">Cody.Me</a></p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/clike/clike.min.js"></script>
+    <script src="./sources/js/index.js"></script>
+</body>
