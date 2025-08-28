@@ -1,14 +1,14 @@
 {
-    "name": "Cody.Me - C Programming Exercises",
-    "short_name": "Cody.Me",
+    "name": "Codyme - Programming Exercises",
+    "short_name": "Codyme",
     "icons": [
         {
-            "src": "./sources/images/favicon/android-chrome-192x192.png",
+            "src": "../favicon/android-chrome-192x192.png",
             "sizes": "192x192",
             "type": "image/png"
         },
         {
-            "src": "./sources/images/favicon/android-chrome-512x512.png",
+            "src": "../favicon/android-chrome-512x512.png",
             "sizes": "512x512",
             "type": "image/png"
         }

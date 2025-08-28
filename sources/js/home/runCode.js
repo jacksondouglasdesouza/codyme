@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+    /* SLEEPING ... ... ... */
 
     const codeTextArea = document.getElementById('c-code');
 
@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     //--
 
-    const rapidApikey = '***********************';
+    const rapidApikey = '********************************************************';
     const rapidApiHost = 'judge0-ce.p.rapidapi.com';
     const apiUrl = `https://judge0-ce.p.rapidapi.com/submissions?base64_encoded=true&fields=*`;
 
@@ -66,5 +66,3 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
     }; //-- END RUN CODE
-
-}); //-- END INDEX.JS

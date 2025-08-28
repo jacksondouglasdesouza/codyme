@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="./sources/css/index.css">
+    <link rel="stylesheet" href="./sources/css/home/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/dracula.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
     <!-- FAVICONS -->
     <link rel="icon" href="./sources/images/favicon/favicon.svg" type="image/svg+xml">
@@ -31,20 +32,29 @@
     <meta name="author" content="Jackson Douglas de Souza">
 
     <!-- OPEN GRAPH -->
-    <meta property="op:title" content="Cody.Me - C Programming Exercises">
+    <meta property="op:title" content="Codyme - Programming Exercises">
     <meta property="op:description" content="lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem">
-    <meta property="op:image" content="./sources/images/logo/logoCody.svg">
-    <meta property="op:url" content="https://cody.me">
+    <meta property="op:image" content="./sources/images/home/header/logo/logoCodyme.svg">
+    <meta property="op:url" content="https://codyeme.online">
     <meta property="op:type" content="website">
 
-
-    <title>Cody.Me | Home</title>
+    <title>Codyme | Home</title>
 </head>
 <body>
     <!--  HEADER   -->
     <header>
-        <div class="mascotCody"><img src="./sources/images/logo/mascotCody.svg" alt="Mascot Cody"></div>
-        <div class="logo"><img src="./sources/images/logo/logoCody.svg" alt="Logo Cody"></div>
+        <div class="logo"><img src="./sources/images/home/header/logo/logoCodyme.svg" alt="Logo Codyme"></div>
+        <div class="mascotCody"><img src="./sources/images/home/header/logo/mascotCodyme.svg" alt="Mascot Codyme"></div>
+        <!-- SEARCH BAR -->
+        <div class="header-right">
+            <div class="searchBar">
+                <input type="text" placeholder="Search...">
+                <button><img src="./sources/images/home/header/search/search.svg" alt="Search"></button>
+            </div>
+            <div class="light-mode"><img src="./sources/images/home/header/theme/lightTheme.svg" alt="Light mode"></div>
+            <div class="dark-mode"><img src="./sources/images/home/header/theme/darkMode.svg" alt="Dark mode"></div>   
+        </div>
+
     </header>
 
     <!--  MAIN   -->
@@ -57,12 +67,12 @@
             <!-- -->
             <div class="code-editor">
                 <textarea id="c-code">
+                    
                     #include <stdio.h>
-
-                        int main(void){
-                            printf("Hello, World! Welcome to Cody.Me!");
-                            return 0;
-                        }
+                    int main(void){
+                        printf("Hello, World! Welcome to Codyme!👋👋🏾👋🏿👋🏻 👋🏼👋🏽 ");
+                        return 0;
+                    }
                 </textarea>
             </div>
 
@@ -81,9 +91,14 @@
 
     <!--  FOOTER   -->
     <footer>
-        <p>Made with ❤️ by <a href="https://github.com/JacksonDouglas" target="_blank" rel="noopener noreferrer">Jackson Douglas</a> | <a href="https://cody.me">Cody.Me</a></p>
+        <div class="atribute"><p>Made with ❤️ by <a href="https://www.linkedin.com/in/jacksondouglasdsouza/" target="_blank" rel="noopener noreferrer">Jackson Douglas</a> | <a href="https://codyme.online" target="_blank" rel="noopener noreferrer" >codyme.online</a></p></div>
+        <div class="socialMedia">
+            <a href="https://github.com/jacksondouglasdesouza" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/jacksondouglasdsouza/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+        </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/clike/clike.min.js"></script>
-    <script src="./sources/js/index.js"></script>
+    <script type="module" src="./sources/js/home/index.js"></script>
 </body>

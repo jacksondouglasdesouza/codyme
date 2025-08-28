@@ -1,0 +1,52 @@
+/* ----- THEMES STYLES ----- */
+
+html.light-mode{
+    --color-bg-primary: #f4f6f8;
+    --color-bg-secondary: #ffffff;
+    --color-text-primary: #212529;
+    --color-text-secondary: #343a40;
+    --color-border: #dee2e6;
+}
+
+
+.light-mode, .dark-mode{
+    cursor: pointer;
+    margin-left: 20px;
+    transition: transform 0.2s ease;
+}
+
+.light-mode:hover, .dark-mode:hover{
+    transform: scale(1);
+}
+
+.light-mode img, .dark-mode img{
+    width: 35px;
+    height: 35px;
+}
+
+.dark-mode{
+    display: none;
+}
+
+html.light-mode .dark-mode{
+    display: block;
+}
+
+html.light-mode .light-mode{
+    display: none;
+}
+
+
+/* ----- MEDIA QUERIES ----- */
+
+@media(max-width: 480px){
+
+    .light-mode, .dark-mode{
+        margin-left: 15px;
+    }
+
+    .light-mode img, .dark-mode img{
+        width: 30px;
+        height: 30px;
+    }
+}

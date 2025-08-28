@@ -1,0 +1,10 @@
+.CodeMirror{
+    font-family: var(--font-code);
+    line-height: 1.5;
+    height: 300px;
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-quaternary);
+    font-size: 0.9rem;
+    padding: 15px;
+    opacity: 0.8;
+}
