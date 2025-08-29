@@ -3,15 +3,14 @@
 html.light-mode{
     --color-bg-primary: #f4f6f8;
     --color-bg-secondary: #ffffff;
-    --color-text-primary: #212529;
-    --color-text-secondary: #343a40;
+    --color-bg-tertiary: #f8f9fa;
+    --color-bg-quaternary: #e9ecef;
+    --color-text-primary: #232323;
+    --color-text-secondary: #6c757d;
     --color-border: #dee2e6;
 }
 
-
 .light-mode, .dark-mode{
-    cursor: pointer;
-    margin-left: 20px;
     transition: transform 0.2s ease;
 }
 
@@ -22,6 +21,7 @@ html.light-mode{
 .light-mode img, .dark-mode img{
     width: 35px;
     height: 35px;
+    cursor: pointer;
 }
 
 .dark-mode{
@@ -42,7 +42,7 @@ html.light-mode .light-mode{
 @media(max-width: 480px){
 
     .light-mode, .dark-mode{
-        margin-left: 15px;
+        margin: 0;
     }
 
     .light-mode img, .dark-mode img{

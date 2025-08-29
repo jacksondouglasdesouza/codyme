@@ -39,6 +39,9 @@ body{
 
 main{
     flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -46,6 +49,8 @@ html{
     
     background-color: var(--color-bg-primary);
     font-family: var(--font-body);
+    margin: 0;
+    padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -76,7 +81,8 @@ header{
 .header-right {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    gap: 20px;
 }
 
 .logo img{

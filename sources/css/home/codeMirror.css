@@ -8,3 +8,96 @@
     padding: 15px;
     opacity: 0.8;
 }
+
+.light-mode .CodeMirror{
+    background-color: var(--color-bg-quaternary);
+    color: var(--color-text-primary);
+}
+
+.CodeMirror-gutter {
+    background-color: var(--color-bg-tertiary);
+    border-right: 1px solid var(--color-border);
+}
+
+.light-mode .CodeMirror-gutter {
+    background-color: var(--color-bg-tertiary);
+    border-right: 1px solid var(--color-border);
+}
+
+.CodeMirror-linenumber {
+    color: var(--color-text-secondary);
+    padding: 0 5px;
+}
+
+.light-mode .CodeMirror-linenumber {
+    color: var(--color-text-secondary);
+}
+
+.CodeMirror-cursor {
+    border-left: 2px solid var(--color-accent);
+}
+
+.cm-s-dracula.CodeMirror{
+    background-color: var(--color-bg-quaternary);
+    color: var(--color-text-primary);
+}
+
+
+/* ----- MEDIA QUERIES  ----- */
+
+
+@media(max-width: 768px){
+    .cody-box{
+        width: 95%;
+        margin: 30px auto;
+    }
+
+    .box-header h1{
+        font-size: 1.8rem;
+    }
+
+    .CodeMirror{
+        height: 280px;
+    }
+}
+
+@media(max-width: 480px){
+.light-mode, .dark-mode{
+    margin-left: 15px;
+}
+
+.light-mode img, .dark-mode img{
+    width: 30px;
+    height: 30px;
+}
+
+.cody-box{
+    margin: 20px auto;
+    border: none;
+}
+
+.box-header, .box-controls, .output-console{
+    padding: 15px;
+}
+
+.box-header h1{
+    font-size: 1.5rem;
+}
+
+#run-button{
+    width: 100%;
+    padding: 12px;
+    font-size: 1.2rem;
+}
+
+.output-console{
+    min-height: 80px;
+}
+
+.CodeMirror{
+    height: 240px;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    padding: 10px;
+    }
+}

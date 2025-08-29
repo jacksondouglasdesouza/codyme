@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Codyme | Home</title>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#a6daf7">
     <link rel="stylesheet" href="./sources/css/home/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/dracula.min.css">
@@ -27,32 +29,78 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- SEO -->
-    <meta name="description" content="lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.">
-    <meta name="keywords" content="lorem, ipsum, dolor, sit, amet">
+    <meta name="description" content="Learn and practice C with hundreds of solved exercises, an interactive code editor, and practical examples.">
+    <meta name="keywords" content="C, programming, exercises, coding, interactive">
     <meta name="author" content="Jackson Douglas de Souza">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+    <link rel="canonical" href="https://codyme.online/">
 
     <!-- OPEN GRAPH -->
-    <meta property="op:title" content="Codyme - Programming Exercises">
-    <meta property="op:description" content="lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem lorem">
-    <meta property="op:image" content="./sources/images/home/header/logo/logoCodyme.svg">
-    <meta property="op:url" content="https://codyeme.online">
-    <meta property="op:type" content="website">
+    <meta property="og:title" content="Codyme - Programming Exercises">
+    <meta property="og:description" content="Learn and practice C with hundreds of solved exercises, an interactive code editor, and practical examples.">
+    <meta property="og:image" content="https://codyme.online/sources/images/home/header/logo/logoCodyme.svg">
+    <meta property="og:url" content="https://codyme.online">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Codyme">
+    <meta property="og:locale" content="en_US">
 
-    <title>Codyme | Home</title>
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Codyme - Programming Exercises">
+    <meta name="twitter:description" content="Learn and practice C with hundreds of solved exercises, an interactive code editor, and practical examples.">
+    <meta name="twitter:image" content="https://codyeme.online/sources/images/home/header/logo/logoCodyme.svg">
+    <meta name="twitter:creator" content="@codymelab">
+    <meta name="twitter:site" content="@codymelab">
+
+    <!-- PRECONNECTS AND SECURITY -->    
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self'; 
+        script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; 
+        style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; 
+        font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com data:;
+        connect-src 'self' https://judge0-ce.p.rapidapi.com;
+        img-src 'self' data:;
+    ">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+    <meta name="color-scheme" content="light dark">
+
+    <!-- STRUCTURED DATA -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "SoftwareApplication",
+            "name": "Codyme",
+            "url": "https://codyme.online",
+            "applicationCategory": "DeveloperApplication",
+            "operatingSystem": "Web",
+            "description": "Learn and practice C with hundreds of solved exercises and an interactive code editor.",
+            "author": {
+                "@type": "Person",
+                "name": "Jackson Douglas de Souza"
+            }
+            
+        }
+    </script>
+
 </head>
 <body>
     <!--  HEADER   -->
     <header>
-        <div class="logo"><img src="./sources/images/home/header/logo/logoCodyme.svg" alt="Logo Codyme"></div>
-        <div class="mascotCody"><img src="./sources/images/home/header/logo/mascotCodyme.svg" alt="Mascot Codyme"></div>
+        <div class="logo"><img src="./sources/images/home/header/logo/logoCodyme.svg" alt="Codyme website logo"></div>
+        <div class="mascotCody"><img src="./sources/images/home/header/logo/mascotCodyme.svg" alt="Mascot of the Codyme website, a blue code golem"></div>
         <!-- SEARCH BAR -->
         <div class="header-right">
             <div class="searchBar">
                 <input type="text" placeholder="Search...">
-                <button><img src="./sources/images/home/header/search/search.svg" alt="Search"></button>
+                <button aria-label="Search button"><img src="./sources/images/home/header/search/search.svg" alt=""></button>
             </div>
-            <div class="light-mode"><img src="./sources/images/home/header/theme/lightTheme.svg" alt="Light mode"></div>
-            <div class="dark-mode"><img src="./sources/images/home/header/theme/darkMode.svg" alt="Dark mode"></div>   
+            <div class="light-mode" aria-label="Switch to light theme"><img src="./sources/images/home/header/theme/lightTheme.svg" alt=""></div>
+            <div class="dark-mode" aria-label="Switch to dark theme"><img src="./sources/images/home/header/theme/darkMode.svg" alt=""></div>   
         </div>
 
     </header>
@@ -66,13 +114,12 @@
             </div>
             <!-- -->
             <div class="code-editor">
-                <textarea id="c-code">
-                    
-                    #include <stdio.h>
-                    int main(void){
-                        printf("Hello, World! Welcome to Codyme!👋👋🏾👋🏿👋🏻 👋🏼👋🏽 ");
-                        return 0;
-                    }
+                <textarea id="c-code">     
+                #include <stdio.h>
+                int main(void){
+                    printf("Hello, World! Welcome to Codyme!");
+                    return 0;
+                }
                 </textarea>
             </div>
 
@@ -93,9 +140,9 @@
     <footer>
         <div class="atribute"><p>Made with ❤️ by <a href="https://www.linkedin.com/in/jacksondouglasdsouza/" target="_blank" rel="noopener noreferrer">Jackson Douglas</a> | <a href="https://codyme.online" target="_blank" rel="noopener noreferrer" >codyme.online</a></p></div>
         <div class="socialMedia">
-            <a href="https://github.com/jacksondouglasdesouza" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/jacksondouglasdsouza/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
-            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+            <a href="https://github.com/jacksondouglasdesouza" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/jacksondouglasdsouza/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
