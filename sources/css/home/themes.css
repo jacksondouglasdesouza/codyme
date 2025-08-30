@@ -10,12 +10,20 @@ html.light-mode{
     --color-border: #dee2e6;
 }
 
+html.light-mode footer h4 {
+    color: var(--color-text-primary);
+}
+
 .light-mode, .dark-mode{
     transition: transform 0.2s ease;
 }
 
 .light-mode:hover, .dark-mode:hover{
     transform: scale(1);
+}
+
+html.light-mode .support-links a img {
+    filter: none;
 }
 
 .light-mode img, .dark-mode img{

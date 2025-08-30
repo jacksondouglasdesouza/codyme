@@ -1,0 +1,67 @@
+.language-selector{
+    position: relative;
+    margin-left: 20px;
+}
+
+.lang-button{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    padding: 5px 5px;
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    color: var(--color-text-tertiary);
+    transition: background-color 0.2s ease;
+}
+
+.light-mode .lang-button{
+    color: var(--color-text-primary);
+}
+
+.lang-button:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.lang-button img{
+    width: 20px;
+    height: auto;
+    border-radius: 3px;
+    object-fit: cover;
+}
+
+.lang-dropdown {
+    position: absolute;
+    top: 120%;
+    right: 0;
+    background-color: #f2f6fa;
+    border: 1px solid var(--color-border);
+    border-radius: 8px;
+    list-style: none;
+    padding: 8px;
+    margin: 0;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+    width: max-content;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s ease;
+}
+
+.lang-dropdown .lang-button{
+    width: 100%;
+}
+
+.language-selector.open .lang-dropdown{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.lang-dropdown li:not(:last-child) {
+    margin-bottom: 5px;
+}

@@ -32,7 +32,6 @@
     <meta name="keywords" content="C, programming, exercises, coding, interactive">
     <meta name="author" content="Jackson Douglas de Souza">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-
     <link rel="canonical" href="https://codyme.online/">
 
     <!-- OPEN GRAPH -->
@@ -57,12 +56,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta http-equiv="Content-Security-Policy" content="
-        default-src 'self'; 
-        script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; 
-        style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; 
-        font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com data:;
-        connect-src 'self' https://judge0-ce.p.rapidapi.com;
-        img-src 'self' data:;
+    default-src 'self'; 
+    script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://www.paypalobjects.com;
+    style-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; 
+    font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com data:;
+    connect-src 'self' https://judge0-ce.p.rapidapi.com;
+    img-src 'self' data: https://www.paypalobjects.com https://nowpayments.io https://pics.paypal.com;
+    frame-src 'self' https://www.paypal.com;
     ">
     <meta name="format-detection" content="telephone=no">
     <meta name="referrer" content="no-referrer-when-downgrade">
@@ -99,9 +99,40 @@
                 <button aria-label="Submit Search"><img src="./sources/images/home/header/search/search.svg" alt=""></button>
             </div>
             <div class="light-mode" role="button" aria-label="Switch to light theme"><img src="./sources/images/home/header/theme/lightTheme.svg" alt=""></div>
-            <div class="dark-mode" role="button" aria-label="Switch to dark theme"><img src="./sources/images/home/header/theme/darkMode.svg" alt=""></div>   
+            <div class="dark-mode" role="button" aria-label="Switch to dark theme"><img src="./sources/images/home/header/theme/darkMode.svg" alt=""></div>
+            <div class="language-selector">
+    
+                <button class="lang-button current-lang" 
+                        aria-label="Select language, current is English" 
+                        aria-haspopup="true" 
+                        aria-expanded="false"
+                        aria-controls="lang-dropdown-menu">
+                    <img src="sources/images/home/header/lang/us.svg" alt="USA Flag">
+                    <span>EN</span>
+                </button>
+                
+                <ul class="lang-dropdown" 
+                    id="lang-dropdown-menu"
+                    role="menu" aria-labelledby="language-selector-label">
+                    <li>
+                        <button class="lang-button" 
+                                role="menuitem"
+                                aria-label="Switch to Portuguese (Brazil)">
+                            <img src="sources/images/home/header/lang/br.svg" alt="Brazil Flag">
+                            <span>PT-BR</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button class="lang-button" 
+                                role="menuitem"
+                                aria-label="Switch to Spanish">
+                            <img src="sources/images/home/header/lang/es.svg" alt="Spain Flag">
+                            <span>ES</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
         </nav>
-
     </header>
 
     <!--  MAIN   -->
@@ -142,14 +173,65 @@ int main(void){
 
     <!--  FOOTER   -->
     <footer>
-        <div class="atribute"><p>Made with ❤️ by <a href="https://www.linkedin.com/in/jacksondouglasdsouza/" target="_blank" rel="noopener noreferrer">Jackson Douglas</a> | <a href="https://codyme.online" target="_blank" rel="noopener noreferrer" >codyme.online</a></p></div>
-        <div class="socialMedia" aria-label="Social Media Links">
+        <div class="footer-credits">
+            <div>
+                <h4>Development</h4>
+            </div>
+            <p>Made with ❤️ by <a href="https://www.linkedin.com/in/jacksondouglasdsouza/" target="_blank" rel="noopener noreferrer">Jackson Douglas</a> | <a href="https://codyme.online" target="_blank" rel="noopener noreferrer" >codyme.online</a></p>
+        </div>
+        
+        <!-- SOCIAL MEDIA -->
+        <nav class="socialMedia" aria-label="Social Media Links">
+            <div>
+                <h4>Connect with us</h4>
+            </div>
+            <div class="socialMedia-icons">
             <a href="https://github.com/jacksondouglasdesouza" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
             <a href="https://www.linkedin.com/in/jacksondouglasdsouza/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
             <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            </div>
+
+        </nav>
+
+        <!-- SUPPORT LINKS -->
+        <div class="footer-support">
+            <h4>Support this project</h4>
+                <div class="support-links">
+
+                    <!-- PAYPAL -->
+                    <div id="donate-button-container">
+                        <div id="donate-button"></div>
+                    </div>
+
+                    <!-- BUY ME A COFFEE -->
+                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Buy me a coffee">
+                        <img src="/sources/images/support/bmc-brand-logo.svg" alt="Buy Me a Coffee">
+                    </a>
+
+                    <!-- KO-FI -->
+                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Ko-fi">
+                        <img src="/sources/images/support/kofi_logo.svg" alt="Ko-fi">
+                    </a>
+
+                    <!-- NOW PAY -->
+                    <a href="https://nowpayments.io/donation?api_key=XXXXXXX-XXXXXXX-XXXXXXX-XXXXXXX" target="_blank" rel="noreferrer noopener"><img src="https://nowpayments.io/images/embeds/donation-button-black.svg" alt="Crypto donation button by NOWPayments"></a>
+            </div>
         </div>
     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/mode/clike/clike.min.js"></script>
+    <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
+    <script>
+    PayPal.Donation.Button({
+    env:'production',
+    hosted_button_id:'JX7C2ET7NR44G',
+    image: {
+    src:'https://pics.paypal.com/00/s/NDExYjUwY2MtMGVjOS00MzA1LThkMWQtM2U4OTlhNzQ3Njg1/file.PNG',
+    alt:'Donate with PayPal button',
+    title:'PayPal - The safer, easier way to pay online!',
+    }
+    }).render('#donate-button');
+    </script>
     <script type="module" src="./sources/js/home/index.js"></script>
 </body>
+</html>
