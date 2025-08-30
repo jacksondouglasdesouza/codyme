@@ -21,7 +21,7 @@ export function setupCodyBox(){
 
     //--
 
-    const rapidApikey = '*************************************************************************************************************************************************************************************************************************************';
+    const rapidApikey = '*************************';
     const rapidApiHost = 'judge0-ce.p.rapidapi.com';
     const apiUrl = `https://judge0-ce.p.rapidapi.com/submissions?base64_encoded=true&fields=*`;
 

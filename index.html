@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Codyme | Home</title>
+    <title>Codyme | Interactive C Programming Exercises</title>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="theme-color" content="#a6daf7">
     <link rel="stylesheet" href="./sources/css/home/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/codemirror.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.5/theme/dracula.min.css">
@@ -49,7 +48,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Codyme - Programming Exercises">
     <meta name="twitter:description" content="Learn and practice C with hundreds of solved exercises, an interactive code editor, and practical examples.">
-    <meta name="twitter:image" content="https://codyeme.online/sources/images/home/header/logo/logoCodyme.svg">
+    <meta name="twitter:image" content="https://codyme.online/sources/images/home/header/logo/logoCodyme.svg">
     <meta name="twitter:creator" content="@codymelab">
     <meta name="twitter:site" content="@codymelab">
 
@@ -86,41 +85,47 @@
             
         }
     </script>
-
 </head>
+<!-- -->
 <body>
     <!--  HEADER   -->
     <header>
         <div class="logo"><img src="./sources/images/home/header/logo/logoCodyme.svg" alt="Codyme website logo"></div>
         <div class="mascotCody"><img src="./sources/images/home/header/logo/mascotCodyme.svg" alt="Mascot of the Codyme website, a blue code golem"></div>
         <!-- SEARCH BAR -->
-        <div class="header-right">
-            <div class="searchBar">
-                <input type="text" placeholder="Search...">
-                <button aria-label="Search button"><img src="./sources/images/home/header/search/search.svg" alt=""></button>
+        <nav class="header-right" aria-label="Site Controls">
+            <div class="searchBar" role="search">
+                <input type="text" placeholder="Search..." aria-label="Search for exercises">
+                <button aria-label="Submit Search"><img src="./sources/images/home/header/search/search.svg" alt=""></button>
             </div>
-            <div class="light-mode" aria-label="Switch to light theme"><img src="./sources/images/home/header/theme/lightTheme.svg" alt=""></div>
-            <div class="dark-mode" aria-label="Switch to dark theme"><img src="./sources/images/home/header/theme/darkMode.svg" alt=""></div>   
-        </div>
+            <div class="light-mode" role="button" aria-label="Switch to light theme"><img src="./sources/images/home/header/theme/lightTheme.svg" alt=""></div>
+            <div class="dark-mode" role="button" aria-label="Switch to dark theme"><img src="./sources/images/home/header/theme/darkMode.svg" alt=""></div>   
+        </nav>
 
     </header>
 
     <!--  MAIN   -->
     <main>
-        <section class="cody-box">
+        <section class="cody-box" aria-labelledby="codybox-title">
             <div class="box-header">
-                <h1>Try It Live!</h1>
+                <h1 id="codybox-title">Try It Live!</h1>
                 <p>Change the code below and watch the magic happen.</p>
             </div>
             <!-- -->
-            <div class="code-editor">
-                <textarea id="c-code">     
-                #include <stdio.h>
-                int main(void){
-                    printf("Hello, World! Welcome to Codyme!");
-                    return 0;
-                }
-                </textarea>
+            <div class="code-editor" role="group" aria-label="C code editor">
+<!-- I left it in this position to adapt to the page layout -->
+<textarea id="c-code" aria-label="C code input area" spellcheck="false">     
+#include <stdio.h>
+int main(void){
+    printf("Hello, World! Welcome to Codyme!");
+    return 0;
+}
+</textarea>
+            </div>
+
+            <div class="stdin-box">
+                <label for="stdin-input">Input (stdin)</label>
+                <textarea id="stdin-input" rows="3"></textarea>
             </div>
 
             <!-- -->
@@ -129,17 +134,16 @@
             </div>
 
             <!-- -->
-            <div class="output-console">
-                <pre id="output">The result of your code will appear here...</pre>
+            <div class="output-console" aria-label="Code execution output">
+                <pre id="output" aria-live="polite">The result of your code will appear here...</pre>
             </div>
         </section>
-        
     </main>
 
     <!--  FOOTER   -->
     <footer>
         <div class="atribute"><p>Made with ❤️ by <a href="https://www.linkedin.com/in/jacksondouglasdsouza/" target="_blank" rel="noopener noreferrer">Jackson Douglas</a> | <a href="https://codyme.online" target="_blank" rel="noopener noreferrer" >codyme.online</a></p></div>
-        <div class="socialMedia">
+        <div class="socialMedia" aria-label="Social Media Links">
             <a href="https://github.com/jacksondouglasdesouza" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
             <a href="https://www.linkedin.com/in/jacksondouglasdsouza/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
             <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
